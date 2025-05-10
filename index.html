@@ -16,7 +16,22 @@
     <!-- Open Graph / Social Media Meta -->
     <meta property="og:title" content="Audio-Visual Generation">
     <meta property="og:description" content="Audio-visual Generation">
-    <meta property="og:image" content="assets/badge.png">
+    <meta property="og:image" content="https://avgen123.github.io/assets/badge.png">
+  
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://avgen123.github.io/">
+    <meta property="og:title" content="Audio-Visual Generation and Learning">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://avgen123.github.io/assets/badge.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://avgen123.github.io">
+    <meta property="twitter:title" content="Audio-Visual Generation and Learning">
+    <meta property="twitter:description" content="">
+    <meta property="twitter:image" content="https://avgen123.github.io/assets/badge.png">
   
 
 
@@ -39,15 +54,6 @@
     <!-- Flickity CSS File -->
     <link href="https://unpkg.com/flickity@2/dist/flickity.min.css" rel="stylesheet">
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-GF1FRVH53P"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-GF1FRVH53P');
-</script>
     <!-- =======================================================
   * Template Name: TheEvent - v2.2.0
   * Template URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
@@ -91,6 +97,7 @@
         <ul class="nav-menu">
           <li class="menu-active"><a href="index.html">Home</a></li>
           <li><a href="#overview">Overview</a></li>
+          <li><a href="#speakers">People</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
@@ -106,7 +113,9 @@
   <!-- ======= Intro Section ======= -->
   <section id="intro">
     <div class="intro-container" data-aos-delay="100">
-      <h1 class="mb-2 pb-0"><span style="color: #1d3163">Audio-Visual Generation</span></h1>
+      <h1 id="dynamic-title" class="mb-2 pb-0" data-title="Audio-Visual Generation">
+        <span style="color: #1d3163;"></span>
+      </h1>
       <p id="sub-heading" class="mb-4 pb-0"></p>
 
 
@@ -320,6 +329,27 @@
   <!-- Flickity JS File -->
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const titleElement = document.getElementById("dynamic-title");
+      const title = titleElement.getAttribute("data-title"); // Retrieve the title from the data attribute
+      let index = 0;
+    
+      // Clear the content of the title element before starting
+      titleElement.innerHTML = '<span style="color: #1d3163;"></span>';
+      const spanElement = titleElement.querySelector("span");
+    
+      function typeEffect() {
+        if (index < title.length) {
+          spanElement.innerHTML += title.charAt(index);
+          index++;
+          setTimeout(typeEffect, 100); // Adjust typing speed (in milliseconds)
+        }
+      }
+    
+      typeEffect();
+    });
+  </script>
 
 </body>
 

@@ -43,6 +43,9 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 70px;
 }
 
+
+
+
 /* Prelaoder */
 #preloader {
   position: fixed;
@@ -3079,3 +3082,35 @@ SETTINGS
 } */
 
 
+#dynamic-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 2.5rem;
+  white-space: nowrap; /* Prevents wrapping */
+  overflow: hidden; /* Hides the text overflow */
+  border-right: 2px solid #1d3163; /* Simulates a cursor */
+  animation: blink 0.7s step-end infinite; /* Cursor blinking effect */
+}
+
+@keyframes blink {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #1d3163;
+  }
+}
+
+
+.quote-style {
+  border-left: 4px solid #1d3163; /* Vertical bar on the left */
+  padding-left: 16px; /* Space between the bar and the text */
+  color: #555; /* Text color */
+  margin: 16px 0; /* Add vertical spacing */
+}
+
+.quote-style-inv {
+  border-left: 4px solid #1bee07; /* Vertical bar on the left */
+  padding-left: 16px; /* Space between the bar and the text */
+  color: #fff; /* Text color */
+  margin: 16px 0; /* Add vertical spacing */
+}
