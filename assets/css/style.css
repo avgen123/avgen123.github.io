@@ -933,6 +933,25 @@ body.mobile-nav-active #mobile-nav-toggle {
   border: 2px solid #1d3163;
 }
 
+
+#intro .about-btn-3 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 50px;
+  transition: 0.5s;
+  line-height: 1;
+  margin: 10px;
+  background: #6b1b71;
+  color: white;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  border: 2px solid #6b1b71;
+}
+
 #intro .about-btn-2.inactive {
   background: rgba(0, 0, 0, 0); /* Transparent background */
   color: #1d3163; /* Red text color */
@@ -946,6 +965,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: transparent;
   color: #1d3163;
 }
+
+#intro .about-btn-3:hover {
+  background: transparent;
+  color: #6b1b71;
+}
+
 
 #tracks .about-btn {
   font-family: "Raleway", sans-serif;
