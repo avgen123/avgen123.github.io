@@ -1,3 +1,3 @@
-# Privacy-Preserving Computer Vision: Privacy for Vision & Imaging
+# Audio-Visual Generation
 
-This repo has the web codes for the Privacy-Preserving Computer Vision
+This repo has the web codes for the AVGen

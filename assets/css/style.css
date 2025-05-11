@@ -1661,6 +1661,10 @@ Secondary Speakers Section
   margin-bottom: 0;
 }
 
+#agenda .agenda-item center {
+  margin: 0 auto;
+}
+
 /*--------------------------------------------------------------
 # Sponsors Section
 --------------------------------------------------------------*/
