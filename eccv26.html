@@ -222,11 +222,11 @@
                 </tr>
                 <tr style="border-bottom: 1px solid #eee;">
                   <td style="padding: 0.6rem 0; font-weight: 600;">Notification of Acceptance</td>
-                  <td style="padding: 0.6rem 0; text-align: right;">August 1, 2026</td>
+                  <td style="padding: 0.6rem 0; text-align: right; text-decoration: line-through; color: #999;">August 1, 2026</td>
                 </tr>
                 <tr>
                   <td style="padding: 0.6rem 0; font-weight: 600;">Workshop Date</td>
-                  <td style="padding: 0.6rem 0; text-align: right;">September 8/9, 2026</td>
+                  <td style="padding: 0.6rem 0; text-align: right;">September 9, 2026</td>
                 </tr>
               </table>
             </div>
@@ -495,18 +495,188 @@
           <h2 style="color: #191919">Program</h2>
         </div>
 
-
         <div class="tab-content row justify-content-center">
           <!-- Schedule  -->
           <div role="tabpanel" class="col-lg-9 tab-pane show active" id="day-1">
-            <h3 class="quote-style">Schedule <span style="font-size: 0.6em;">ECCV 2026 — Date TBA</span> </h3>
-            <div class="row agenda-item">
-              <div class="col-md-12">
-                <p style="text-align: center; font-size: 1.1rem; color: #888; padding: 2rem 0;">
-                  <i class="fa fa-clock-o" style="margin-right: 0.5rem;"></i>Schedule to be announced
-                </p>
-              </div>
+            <h3 class="quote-style">Schedule <span style="font-size: 0.6em;">ECCV 2026 — Sep 9th</span></h3>
+
+            <style>
+              .schedule-table { width: 100%; border-collapse: separate; border-spacing: 0; font-size: 0.95rem; }
+              .schedule-table tr { border-bottom: 1px solid #e9ecef; }
+              .schedule-table td { padding: 0.85rem 1rem; vertical-align: middle; }
+              .schedule-time { font-weight: 700; color: #1d3163; white-space: nowrap; width: 160px; }
+              .schedule-event { color: #333; }
+              .schedule-break { background: #f8f9fa; }
+              .schedule-break .schedule-event { color: #888; font-style: italic; }
+              .schedule-keynote .schedule-event { font-weight: 600; }
+              .schedule-oral .schedule-event { font-weight: 600; color: #1d3163; }
+              .schedule-industry .schedule-event { font-weight: 500; }
+              .schedule-badge { display: inline-block; font-size: 0.65em; padding: 0.15em 0.5em; border-radius: 3px; vertical-align: middle; margin-left: 0.5rem; letter-spacing: 0.03em; font-weight: 700; }
+              .badge-keynote { background: #1d3163; color: white; }
+              .badge-oral { background: #28a745; color: white; }
+              .badge-industry { background: #6f42c1; color: white; }
+              .badge-break { background: #e9ecef; color: #666; }
+              .badge-poster { background: #fd7e14; color: white; }
+
+              .paper-list { list-style: none; padding: 0; margin: 0.8rem 0 0 0; }
+              .paper-list li { padding: 0.6rem 0.8rem; margin-bottom: 0.5rem; background: #f8f9fa; border-radius: 8px; border-left: 3px solid #28a745; }
+              .paper-title { font-weight: 600; color: #1d3163; font-size: 0.9rem; }
+              .paper-title a { color: #1d3163; text-decoration: none; }
+              .paper-title a:hover { text-decoration: underline; }
+              .paper-authors { font-size: 0.8rem; color: #666; margin-top: 0.2rem; }
+              .paper-presenter { font-size: 0.78rem; color: #28a745; font-weight: 600; margin-top: 0.15rem; }
+            </style>
+
+            <div style="background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 2px 15px rgba(0,0,0,0.08); margin-bottom: 2rem;">
+              <table class="schedule-table">
+                <tr>
+                  <td class="schedule-time">09:00 – 09:10</td>
+                  <td class="schedule-event">Welcome & Opening Remarks</td>
+                </tr>
+
+                <tr class="schedule-oral">
+                  <td class="schedule-time">09:10 – 10:00</td>
+                  <td class="schedule-event"><a href="#oral-1" style="color: #1d3163; text-decoration: none;">Oral Paper Session 1</a> <span class="schedule-badge badge-oral">ORAL</span></td>
+                </tr>
+
+                <tr class="schedule-keynote">
+                  <td class="schedule-time">10:00 – 10:40</td>
+                  <td class="schedule-event">Keynote Speaker 1 — Prof. Dima Damen <span class="schedule-badge badge-keynote">KEYNOTE</span></td>
+                </tr>
+
+                <tr class="schedule-break">
+                  <td class="schedule-time">10:40 – 11:00</td>
+                  <td class="schedule-event"><i class="fa fa-coffee" style="margin-right: 0.4rem;"></i>Morning Coffee & Networking Break <span class="schedule-badge badge-break">BREAK</span></td>
+                </tr>
+
+                <tr class="schedule-industry">
+                  <td class="schedule-time">11:00 – 11:30</td>
+                  <td class="schedule-event">Industry Talk 1 — Google DeepMind <span class="schedule-badge badge-industry">INDUSTRY</span></td>
+                </tr>
+
+                <tr class="schedule-keynote">
+                  <td class="schedule-time">11:30 – 12:10</td>
+                  <td class="schedule-event">Keynote Speaker 2 — Prof. Ruohan Gao <span class="schedule-badge badge-keynote">KEYNOTE</span></td>
+                </tr>
+
+                <tr class="schedule-break">
+                  <td class="schedule-time">12:10 – 13:00</td>
+                  <td class="schedule-event"><i class="fa fa-cutlery" style="margin-right: 0.4rem;"></i>Lunch Break <span class="schedule-badge badge-break">BREAK</span></td>
+                </tr>
+
+                <tr>
+                  <td class="schedule-time">13:00 – 14:00</td>
+                  <td class="schedule-event"><i class="fa fa-thumb-tack" style="margin-right: 0.4rem;"></i>Poster Session <span class="schedule-badge badge-poster">POSTER</span></td>
+                </tr>
+
+                <tr class="schedule-keynote">
+                  <td class="schedule-time">14:00 – 14:40</td>
+                  <td class="schedule-event">Keynote Speaker 3 — Prof. Kristen Grauman <span class="schedule-badge badge-keynote">KEYNOTE</span></td>
+                </tr>
+
+                <tr class="schedule-industry">
+                  <td class="schedule-time">14:40 – 15:10</td>
+                  <td class="schedule-event">Industry Talk 2 — Anuttacon <span class="schedule-badge badge-industry">INDUSTRY</span></td>
+                </tr>
+
+                <tr class="schedule-keynote">
+                  <td class="schedule-time">15:10 – 15:50</td>
+                  <td class="schedule-event">Keynote Speaker 4 — Prof. Joon Son Chung <span class="schedule-badge badge-keynote">KEYNOTE</span></td>
+                </tr>
+
+                <tr class="schedule-industry">
+                  <td class="schedule-time">15:50 – 16:20</td>
+                  <td class="schedule-event">Industry Talk 3 — Cantina <span class="schedule-badge badge-industry">INDUSTRY</span></td>
+                </tr>
+
+                <tr class="schedule-oral">
+                  <td class="schedule-time">16:20 – 17:00</td>
+                  <td class="schedule-event"><a href="#oral-2" style="color: #1d3163; text-decoration: none;">Oral Paper Session 2</a> <span class="schedule-badge badge-oral">ORAL</span></td>
+                </tr>
+
+                <tr class="schedule-industry">
+                  <td class="schedule-time">17:00 – 17:30</td>
+                  <td class="schedule-event">Industry Talk 4 — Tavus <span class="schedule-badge badge-industry">INDUSTRY</span></td>
+                </tr>
+
+                <tr>
+                  <td class="schedule-time">17:30 – 17:35</td>
+                  <td class="schedule-event">Closing Remarks & Wrap-Up</td>
+                </tr>
+              </table>
             </div>
+
+            <h3 class="quote-style" style="margin-top: 2rem;">Accepted Papers</h3>
+
+            <!-- Oral Paper Session 1 -->
+            <div id="oral-1" style="background: white; border-radius: 12px; padding: 1.5rem 2rem; box-shadow: 0 2px 15px rgba(0,0,0,0.08); margin-bottom: 2rem;">
+              <h4 style="color: #1d3163; font-weight: 700; margin-bottom: 1rem;">
+                <i class="fa fa-microphone" style="margin-right: 0.5rem;"></i>Oral Paper Session 1
+                <span style="font-size: 0.65em; color: #888; font-weight: 400; margin-left: 0.5rem;">09:10 – 10:00</span>
+              </h4>
+              <ul class="paper-list">
+                <li>
+                  <div class="paper-title"><a href="26ECCV/papers/AURA.pdf" target="_blank"><i class="fa fa-file-pdf-o" style="margin-right: 0.3rem;"></i>AURA: AUdio-dRiven Streaming Avatar</a></div>
+                  <div class="paper-authors">Nathaniel Cohen, Nicolas Dufour, Amélie Royer, Alasdair Newson, Patrick Perez</div>
+                  <div class="paper-presenter"><i class="fa fa-user" style="margin-right: 0.2rem;"></i>Presenter: Nathaniel Cohen</div>
+                </li>
+                <li>
+                  <div class="paper-title"><a href="26ECCV/papers/FlowLong.pdf" target="_blank"><i class="fa fa-file-pdf-o" style="margin-right: 0.3rem;"></i>FlowLong: Training-free Long Audio-Video Generation via Manifold-constrained Tweedie Matching</a></div>
+                  <div class="paper-authors">Jangho Park, Geon Yeong Park, Gihyun Kwon, Jong Chul Ye</div>
+                  <div class="paper-presenter"><i class="fa fa-user" style="margin-right: 0.2rem;"></i>Presenter: TBA</div>
+                </li>
+                <li>
+                  <div class="paper-title"><a href="26ECCV/papers/OmniForcing.pdf" target="_blank"><i class="fa fa-file-pdf-o" style="margin-right: 0.3rem;"></i>OmniForcing: Unleashing Real-time Joint Audio-Visual Generation</a></div>
+                  <div class="paper-authors">Yaofeng Su, Yuming Li, Zeyue Xue, Jie Huang, Siming Fu, Haoran Li, Haoyang Huang, Nan Duan</div>
+                  <div class="paper-presenter"><i class="fa fa-user" style="margin-right: 0.2rem;"></i>Presenter: Yaofeng Su</div>
+                </li>
+                <li>
+                  <div class="paper-title"><a href="26ECCV/papers/TAVID.pdf" target="_blank"><i class="fa fa-file-pdf-o" style="margin-right: 0.3rem;"></i>TAVID: Text-Driven Audio-Visual Interactive Dialogue Generation</a></div>
+                  <div class="paper-authors">Ji-Hoon Kim, Junseok Ahn, Doyeop Kwak, Joon Son Chung, Shinji Watanabe</div>
+                  <div class="paper-presenter"><i class="fa fa-user" style="margin-right: 0.2rem;"></i>Presenter: Junseok Ahn</div>
+                </li>
+                <li>
+                  <div class="paper-title"><a href="26ECCV/papers/LookaheadAnchoring.pdf" target="_blank"><i class="fa fa-file-pdf-o" style="margin-right: 0.3rem;"></i>Lookahead Anchoring: Preserving Character Identity in Audio-Driven Human Animation</a></div>
+                  <div class="paper-authors">Junyoung Seo, Rodrigo Mira, Alexandros Haliassos, Stella Bounareli, Honglie Chen, Linh Tran, Seungryong Kim, Zoe Landgraf, Jie Shen</div>
+                  <div class="paper-presenter"><i class="fa fa-user" style="margin-right: 0.2rem;"></i>Presenter: Junyoung Seo</div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Oral Paper Session 2 -->
+            <div id="oral-2" style="background: white; border-radius: 12px; padding: 1.5rem 2rem; box-shadow: 0 2px 15px rgba(0,0,0,0.08); margin-bottom: 2rem;">
+              <h4 style="color: #1d3163; font-weight: 700; margin-bottom: 1rem;">
+                <i class="fa fa-microphone" style="margin-right: 0.5rem;"></i>Oral Paper Session 2
+                <span style="font-size: 0.65em; color: #888; font-weight: 400; margin-left: 0.5rem;">16:20 – 17:00</span>
+              </h4>
+              <ul class="paper-list">
+                <li>
+                  <div class="paper-title"><a href="26ECCV/papers/VoiceCloning.pdf" target="_blank"><i class="fa fa-file-pdf-o" style="margin-right: 0.3rem;"></i>Adding Voice Cloning to Text-to-Audio-Video Models with a Single Zero-Initialised Layer</a></div>
+                  <div class="paper-authors">Ivan Mikheev, Viacheslav Vasilev, Anna Dmitrienko, Alexey Letunovskiy, Ivan Kirillov, Kirill Chernyshev, Denis Dimitrov</div>
+                  <div class="paper-presenter"><i class="fa fa-user" style="margin-right: 0.2rem;"></i>Presenter: Viacheslav Vasilev</div>
+                </li>
+                <li>
+                  <div class="paper-title"><a href="26ECCV/papers/C3ASD.pdf" target="_blank"><i class="fa fa-file-pdf-o" style="margin-right: 0.3rem;"></i>C3ASD: Multi-Level Consistency-Driven Representation Learning for Robust Active Speaker Detection</a></div>
+                  <div class="paper-authors">Jin Hong, Jisoo Park, Junseok Kwon</div>
+                  <div class="paper-presenter"><i class="fa fa-user" style="margin-right: 0.2rem;"></i>Presenter: Jisoo Park</div>
+                </li>
+                <li>
+                  <div class="paper-title"><a href="26ECCV/papers/BringMusicTheHorizon.pdf" target="_blank"><i class="fa fa-file-pdf-o" style="margin-right: 0.3rem;"></i>Bring Music The Horizon: Music-Driven 360° Video Generation</a></div>
+                  <div class="paper-authors">Kai Hsu Tsai, Yong Wei Fu, Hung I Yang, Yu-Chih Chen</div>
+                  <div class="paper-presenter"><i class="fa fa-user" style="margin-right: 0.2rem;"></i>Presenters: Kai Hsu Tsai, Yong Wei Fu, Hung I Yang</div>
+                </li>
+                <li>
+                  <div class="paper-title"><a href="26ECCV/papers/PCADance.pdf" target="_blank"><i class="fa fa-file-pdf-o" style="margin-right: 0.3rem;"></i>Music-Driven Dance Video Generation via PCA-Whitened Latent Diffusion with Rotary Position Embedding</a></div>
+                  <div class="paper-authors">Nokap Tony Park</div>
+                  <div class="paper-presenter"><i class="fa fa-user" style="margin-right: 0.2rem;"></i>Presenter: Nokap Tony Park</div>
+                </li>
+              </ul>
+            </div>
+
+            <p style="font-size: 0.9rem; color: #555; text-align: center; background: #eef2fa; border-radius: 8px; padding: 0.8rem 1.2rem; border-left: 4px solid #1d3163;">
+              All accepted papers will also present a poster during the <b>Poster Session (13:00 – 14:00)</b>.
+            </p>
+
           </div>
         </div>
 
